@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#333333"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/inputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:background="@null"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#666666"
+                    android:hint="Type text or emoji..."
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="24dp">
+
+                    <Button
+                        android:id="@+id/btnApplyText"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6200EA"
+                        android:textColor="#FFFFFF"
+                        android:text="Launch"
+                        app:cornerRadius="12dp"
+                        android:layout_marginEnd="6dp"/>
+
+                    <Button
+                        android:id="@+id/btnStopService"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CF6679"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Stop"
+                        app:cornerRadius="12dp"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchFreeCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock Image Proportions"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnPickImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:backgroundTint="#03DAC5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Crop &amp; Apply Image"
+                    app:cornerRadius="12dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#333333"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎨 Appearance"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notch Background Color"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp">
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorBgBlack" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#000000" app:cardCornerRadius="20dp" app:strokeColor="#555555" app:strokeWidth="1dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorBgWhite" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="20dp" app:strokeColor="#555555" app:strokeWidth="1dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorBgPurple" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#6200EA" app:cardCornerRadius="20dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorBgBlue" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#0D47A1" app:cardCornerRadius="20dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorBgRed" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#B71C1C" app:cardCornerRadius="20dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Color"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorTextWhite" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="20dp" app:strokeColor="#555555" app:strokeWidth="1dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorTextBlack" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#000000" app:cardCornerRadius="20dp" app:strokeColor="#555555" app:strokeWidth="1dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorTextYellow" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#FFEA00" app:cardCornerRadius="20dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorTextCyan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#00E5FF" app:cardCornerRadius="20dp"/>
+                    <com.google.android.material.card.MaterialCardView android:id="@+id/colorTextPink" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginHorizontal="8dp" app:cardBackgroundColor="#FF007F" app:cardCornerRadius="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#333333"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📐 Bubble Size"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Width"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"/>
+                <SeekBar
+                    android:id="@+id/seekWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:min="50"
+                    android:max="1000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"/>
+                <SeekBar
+                    android:id="@+id/seekHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="30"
+                    android:max="500"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#333333"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎯 Fine-Tune Position"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"/>
+
+                    <Button
+                        android:id="@+id/btnResetPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="#333333"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:text="Reset"
+                        app:cornerRadius="8dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left / Right (X)"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"/>
+                <SeekBar
+                    android:id="@+id/seekX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:min="-500"
+                    android:max="1500"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up / Down (Y)"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"/>
+                <SeekBar
+                    android:id="@+id/seekY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="-500"
+                    android:max="2000"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
