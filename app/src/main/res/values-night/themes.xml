@@ -1,7 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme (night). App is intentionally always-dark, so this mirrors the light theme. -->
     <style name="Base.Theme.CustomNotchDisplay" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/orange_dark</item>
+        <item name="colorSecondary">@color/orange_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_root</item>
+        <item name="colorControlActivated">@color/orange_primary</item>
+        <item name="colorControlNormal">@color/text_muted</item>
+        <item name="colorControlHighlight">@color/orange_ripple</item>
+        <item name="android:windowBackground">@color/bg_root</item>
+        <item name="android:statusBarColor">@color/bg_root</item>
+        <item name="android:navigationBarColor">@color/bg_root</item>
     </style>
 </resources>

@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="@color/bg_root">
 
-    <ImageView
-        android:id="@+id/splashLogo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@mipmap/ic_launcher" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Notch Studio"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp">
 
-</LinearLayout>
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/bg_glow_orange" />
+
+            <ImageView
+                android:id="@+id/splashLogo"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Notch Studio"
+            android:textColor="@color/text_primary"
+            android:textSize="30sp"
+            android:letterSpacing="0.01"
+            android:textStyle="bold"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/splashSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="DESIGN YOUR NOTCH, YOUR WAY"
+            android:textColor="@color/orange_primary"
+            android:textSize="11sp"
+            android:letterSpacing="0.18"
+            android:alpha="0" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Core -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Orange accent system -->
+    <color name="orange_primary">#FF7A1A</color>
+    <color name="orange_dark">#E8650A</color>
+    <color name="orange_light">#FFA85C</color>
+    <color name="orange_faint">#2B1608</color>
+    <color name="orange_ripple">#33FF7A1A</color>
+
+    <!-- Neutral / surface system -->
+    <color name="bg_root">#0A0A0A</color>
+    <color name="surface_card">#141414</color>
+    <color name="surface_alt">#1A1A1A</color>
+    <color name="surface_pressed">#1F1F1F</color>
+    <color name="stroke_subtle">#221F1F</color>
+    <color name="stroke_strong">#2E2A28</color>
+    <color name="divider">#1C1C1C</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0A0A0</color>
+    <color name="text_muted">#5C5C5C</color>
 </resources>

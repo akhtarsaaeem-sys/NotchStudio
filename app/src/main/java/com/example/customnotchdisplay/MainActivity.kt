@@ -64,6 +64,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        animateContentEntrance()
+
         inputEditText = findViewById(R.id.inputEditText)
         btnApplyText = findViewById(R.id.btnApplyText)
         btnPickImage = findViewById(R.id.btnPickImage)
@@ -144,6 +146,24 @@ class MainActivity : AppCompatActivity() {
         seekHeight.setOnSeekBarChangeListener(slideListener)
         seekX.setOnSeekBarChangeListener(slideListener)
         seekY.setOnSeekBarChangeListener(slideListener)
+    }
+
+    // Purely cosmetic: staggers a quick fade + rise-in for the header and each card
+    // when the screen first appears. Does not affect any app logic or state.
+    private fun animateContentEntrance() {
+        val container = findViewById<android.widget.LinearLayout>(R.id.contentContainer)
+        for (i in 0 until container.childCount) {
+            val child = container.getChildAt(i)
+            child.alpha = 0f
+            child.translationY = 40f
+            child.animate()
+                .alpha(1f)
+                .translationY(0f)
+                .setStartDelay(60L * i)
+                .setDuration(320)
+                .setInterpolator(android.view.animation.DecelerateInterpolator())
+                .start()
+        }
     }
 
     private fun updateBgColor(color: Int) {
